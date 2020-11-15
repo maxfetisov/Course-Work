@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище classroom_fundModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="act_of_renting">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="firm_id" Type="bigint" Nullable="false" />
+    <Property Name="floor_number" Type="tinyint" Nullable="false" />
+    <Property Name="start_date" Type="date" Nullable="false" />
+    <Property Name="end_date" Type="date" Nullable="false" />
+    <Property Name="sum_of_money" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="classroom">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="floor_number" Type="tinyint" Nullable="false" />
+    <Property Name="responsible_person_id" Type="bigint" Nullable="false" />
+    <Property Name="number" Type="smallint" Nullable="false" />
+    <Property Name="capacity" Type="int" Nullable="false" />
+    <Property Name="compliance_with_safety_regulations" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="firm">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="contact_phone_number" Type="nvarchar" MaxLength="20" />
+    <Property Name="contact_first_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="contact_last_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="contact_middle_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="floor">
+    <Key>
+      <PropertyRef Name="number" />
+    </Key>
+    <Property Name="number" Type="tinyint" Nullable="false" />
+    <Property Name="department_name" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="person">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="first_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="last_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="middle_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="phone_number" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="address" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "classroom_fund.dbo.floors_and_classrooms" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="floors_and_classrooms">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="floor_number" />
+      <PropertyRef Name="responsible_person_id" />
+      <PropertyRef Name="number" />
+      <PropertyRef Name="capacity" />
+      <PropertyRef Name="compliance_with_safety_regulations" />
+      <PropertyRef Name="department_name" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="floor_number" Type="tinyint" Nullable="false" />
+    <Property Name="responsible_person_id" Type="bigint" Nullable="false" />
+    <Property Name="number" Type="smallint" Nullable="false" />
+    <Property Name="capacity" Type="int" Nullable="false" />
+    <Property Name="compliance_with_safety_regulations" Type="bit" Nullable="false" />
+    <Property Name="department_name" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__act_of_re__firm___440B1D61">
+    <End Role="firm" Type="Self.firm" Multiplicity="1" />
+    <End Role="act_of_renting" Type="Self.act_of_renting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="firm">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="act_of_renting">
+        <PropertyRef Name="firm_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__act_of_re__floor__44FF419A">
+    <End Role="floor" Type="Self.floor" Multiplicity="1" />
+    <End Role="act_of_renting" Type="Self.act_of_renting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="floor">
+        <PropertyRef Name="number" />
+      </Principal>
+      <Dependent Role="act_of_renting">
+        <PropertyRef Name="floor_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__classroom__floor__3F466844">
+    <End Role="floor" Type="Self.floor" Multiplicity="1" />
+    <End Role="classroom" Type="Self.classroom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="floor">
+        <PropertyRef Name="number" />
+      </Principal>
+      <Dependent Role="classroom">
+        <PropertyRef Name="floor_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__classroom__respo__403A8C7D">
+    <End Role="person" Type="Self.person" Multiplicity="1" />
+    <End Role="classroom" Type="Self.classroom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="person">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="classroom">
+        <PropertyRef Name="responsible_person_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="renting_price" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="min_price" Type="decimal" Mode="In" />
+    <Parameter Name="max_price" Type="decimal" Mode="In" />
+  </Function>
+  <EntityContainer Name="Хранилище classroom_fundModelContainer">
+    <EntitySet Name="act_of_renting" EntityType="Self.act_of_renting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="classroom" EntityType="Self.classroom" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="firm" EntityType="Self.firm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="floor" EntityType="Self.floor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="person" EntityType="Self.person" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="floors_and_classrooms" EntityType="Self.floors_and_classrooms" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [floors_and_classrooms].[id] AS [id], 
+    [floors_and_classrooms].[floor_number] AS [floor_number], 
+    [floors_and_classrooms].[responsible_person_id] AS [responsible_person_id], 
+    [floors_and_classrooms].[number] AS [number], 
+    [floors_and_classrooms].[capacity] AS [capacity], 
+    [floors_and_classrooms].[compliance_with_safety_regulations] AS [compliance_with_safety_regulations], 
+    [floors_and_classrooms].[department_name] AS [department_name]
+    FROM [dbo].[floors_and_classrooms] AS [floors_and_classrooms]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__act_of_re__firm___440B1D61" Association="Self.FK__act_of_re__firm___440B1D61">
+      <End Role="firm" EntitySet="firm" />
+      <End Role="act_of_renting" EntitySet="act_of_renting" />
+    </AssociationSet>
+    <AssociationSet Name="FK__act_of_re__floor__44FF419A" Association="Self.FK__act_of_re__floor__44FF419A">
+      <End Role="floor" EntitySet="floor" />
+      <End Role="act_of_renting" EntitySet="act_of_renting" />
+    </AssociationSet>
+    <AssociationSet Name="FK__classroom__floor__3F466844" Association="Self.FK__classroom__floor__3F466844">
+      <End Role="floor" EntitySet="floor" />
+      <End Role="classroom" EntitySet="classroom" />
+    </AssociationSet>
+    <AssociationSet Name="FK__classroom__respo__403A8C7D" Association="Self.FK__classroom__respo__403A8C7D">
+      <End Role="person" EntitySet="person" />
+      <End Role="classroom" EntitySet="classroom" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

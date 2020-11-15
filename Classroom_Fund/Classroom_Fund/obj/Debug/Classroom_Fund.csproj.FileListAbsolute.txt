@@ -1,0 +1,132 @@
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Classroom_Fund.exe.config
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Classroom_Fund.exe
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Classroom_Fund.pdb
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\EntityFramework.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Buffers.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Memory.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\EntityFramework.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Buffers.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Memory.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.Form1.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.Properties.Resources.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.csproj.GenerateResource.cache
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.csproj.CopyComplete
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.exe
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.pdb
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.AddClassroomForm.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.AddPersonForm.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.AddFloorForm.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.Auth.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.AddFirmForm.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund\Classroom_Fund\obj\Debug\Classroom_Fund.AddActOfRentingForm.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Classroom_Fund.exe.config
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Classroom_Fund.exe
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Classroom_Fund.pdb
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\EntityFramework.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Buffers.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Memory.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\EntityFramework.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Buffers.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Memory.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.AddActOfRentingForm.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.AddClassroomForm.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.AddFirmForm.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.AddFloorForm.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.AddPersonForm.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.Auth.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.Form1.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.Properties.Resources.resources
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.csproj.GenerateResource.cache
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.csproj.CopyComplete
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.exe
+C:\Users\Пользователь\source\repos\Classroom_Fund — копия\Classroom_Fund\obj\Debug\Classroom_Fund.pdb

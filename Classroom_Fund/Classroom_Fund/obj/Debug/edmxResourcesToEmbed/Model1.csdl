@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="classroom_fundModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="act_of_renting">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="firm_id" Type="Int64" Nullable="false" />
+    <Property Name="floor_number" Type="Byte" Nullable="false" />
+    <Property Name="start_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="end_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="sum_of_money" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <NavigationProperty Name="firm" Relationship="Self.FK__act_of_re__firm___440B1D61" FromRole="act_of_renting" ToRole="firm" />
+    <NavigationProperty Name="floor" Relationship="Self.FK__act_of_re__floor__44FF419A" FromRole="act_of_renting" ToRole="floor" />
+  </EntityType>
+  <EntityType Name="classroom">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="floor_number" Type="Byte" Nullable="false" />
+    <Property Name="responsible_person_id" Type="Int64" Nullable="false" />
+    <Property Name="number" Type="Int16" Nullable="false" />
+    <Property Name="capacity" Type="Int32" Nullable="false" />
+    <Property Name="compliance_with_safety_regulations" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="floor" Relationship="Self.FK__classroom__floor__3F466844" FromRole="classroom" ToRole="floor" />
+    <NavigationProperty Name="person" Relationship="Self.FK__classroom__respo__403A8C7D" FromRole="classroom" ToRole="person" />
+  </EntityType>
+  <EntityType Name="firm">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="contact_phone_number" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="contact_first_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="contact_last_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="contact_middle_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="act_of_renting" Relationship="Self.FK__act_of_re__firm___440B1D61" FromRole="firm" ToRole="act_of_renting" />
+  </EntityType>
+  <EntityType Name="floor">
+    <Key>
+      <PropertyRef Name="number" />
+    </Key>
+    <Property Name="number" Type="Byte" Nullable="false" />
+    <Property Name="department_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="act_of_renting" Relationship="Self.FK__act_of_re__floor__44FF419A" FromRole="floor" ToRole="act_of_renting" />
+    <NavigationProperty Name="classroom" Relationship="Self.FK__classroom__floor__3F466844" FromRole="floor" ToRole="classroom" />
+  </EntityType>
+  <EntityType Name="person">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="first_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="last_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="middle_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone_number" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="classroom" Relationship="Self.FK__classroom__respo__403A8C7D" FromRole="person" ToRole="classroom" />
+  </EntityType>
+  <EntityType Name="floors_and_classrooms">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="floor_number" />
+      <PropertyRef Name="responsible_person_id" />
+      <PropertyRef Name="number" />
+      <PropertyRef Name="capacity" />
+      <PropertyRef Name="compliance_with_safety_regulations" />
+      <PropertyRef Name="department_name" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="floor_number" Type="Byte" Nullable="false" />
+    <Property Name="responsible_person_id" Type="Int64" Nullable="false" />
+    <Property Name="number" Type="Int16" Nullable="false" />
+    <Property Name="capacity" Type="Int32" Nullable="false" />
+    <Property Name="compliance_with_safety_regulations" Type="Boolean" Nullable="false" />
+    <Property Name="department_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__act_of_re__firm___440B1D61">
+    <End Role="firm" Type="Self.firm" Multiplicity="1" />
+    <End Role="act_of_renting" Type="Self.act_of_renting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="firm">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="act_of_renting">
+        <PropertyRef Name="firm_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__act_of_re__floor__44FF419A">
+    <End Role="floor" Type="Self.floor" Multiplicity="1" />
+    <End Role="act_of_renting" Type="Self.act_of_renting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="floor">
+        <PropertyRef Name="number" />
+      </Principal>
+      <Dependent Role="act_of_renting">
+        <PropertyRef Name="floor_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__classroom__floor__3F466844">
+    <End Role="floor" Type="Self.floor" Multiplicity="1" />
+    <End Role="classroom" Type="Self.classroom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="floor">
+        <PropertyRef Name="number" />
+      </Principal>
+      <Dependent Role="classroom">
+        <PropertyRef Name="floor_number" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__classroom__respo__403A8C7D">
+    <End Role="person" Type="Self.person" Multiplicity="1" />
+    <End Role="classroom" Type="Self.classroom" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="person">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="classroom">
+        <PropertyRef Name="responsible_person_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="classroom_fundEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="act_of_renting" EntityType="Self.act_of_renting" />
+    <EntitySet Name="classroom" EntityType="Self.classroom" />
+    <EntitySet Name="firm" EntityType="Self.firm" />
+    <EntitySet Name="floor" EntityType="Self.floor" />
+    <EntitySet Name="person" EntityType="Self.person" />
+    <EntitySet Name="floors_and_classrooms" EntityType="Self.floors_and_classrooms" />
+    <AssociationSet Name="FK__act_of_re__firm___440B1D61" Association="Self.FK__act_of_re__firm___440B1D61">
+      <End Role="firm" EntitySet="firm" />
+      <End Role="act_of_renting" EntitySet="act_of_renting" />
+    </AssociationSet>
+    <AssociationSet Name="FK__act_of_re__floor__44FF419A" Association="Self.FK__act_of_re__floor__44FF419A">
+      <End Role="floor" EntitySet="floor" />
+      <End Role="act_of_renting" EntitySet="act_of_renting" />
+    </AssociationSet>
+    <AssociationSet Name="FK__classroom__floor__3F466844" Association="Self.FK__classroom__floor__3F466844">
+      <End Role="floor" EntitySet="floor" />
+      <End Role="classroom" EntitySet="classroom" />
+    </AssociationSet>
+    <AssociationSet Name="FK__classroom__respo__403A8C7D" Association="Self.FK__classroom__respo__403A8C7D">
+      <End Role="person" EntitySet="person" />
+      <End Role="classroom" EntitySet="classroom" />
+    </AssociationSet>
+    <FunctionImport Name="renting_price">
+      <Parameter Name="min_price" Mode="In" Type="Decimal" />
+      <Parameter Name="max_price" Mode="In" Type="Decimal" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

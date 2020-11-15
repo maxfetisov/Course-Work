@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище classroom_fundModelContainer" CdmEntityContainer="classroom_fundEntities">
+    <EntitySetMapping Name="act_of_renting">
+      <EntityTypeMapping TypeName="classroom_fundModel.act_of_renting">
+        <MappingFragment StoreEntitySet="act_of_renting">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="firm_id" ColumnName="firm_id" />
+          <ScalarProperty Name="floor_number" ColumnName="floor_number" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="sum_of_money" ColumnName="sum_of_money" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="classroom">
+      <EntityTypeMapping TypeName="classroom_fundModel.classroom">
+        <MappingFragment StoreEntitySet="classroom">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="floor_number" ColumnName="floor_number" />
+          <ScalarProperty Name="responsible_person_id" ColumnName="responsible_person_id" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="capacity" ColumnName="capacity" />
+          <ScalarProperty Name="compliance_with_safety_regulations" ColumnName="compliance_with_safety_regulations" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="firm">
+      <EntityTypeMapping TypeName="classroom_fundModel.firm">
+        <MappingFragment StoreEntitySet="firm">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="contact_phone_number" ColumnName="contact_phone_number" />
+          <ScalarProperty Name="contact_first_name" ColumnName="contact_first_name" />
+          <ScalarProperty Name="contact_last_name" ColumnName="contact_last_name" />
+          <ScalarProperty Name="contact_middle_name" ColumnName="contact_middle_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="floor">
+      <EntityTypeMapping TypeName="classroom_fundModel.floor">
+        <MappingFragment StoreEntitySet="floor">
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="department_name" ColumnName="department_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="person">
+      <EntityTypeMapping TypeName="classroom_fundModel.person">
+        <MappingFragment StoreEntitySet="person">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="middle_name" ColumnName="middle_name" />
+          <ScalarProperty Name="phone_number" ColumnName="phone_number" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="floors_and_classrooms">
+      <EntityTypeMapping TypeName="classroom_fundModel.floors_and_classrooms">
+        <MappingFragment StoreEntitySet="floors_and_classrooms">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="floor_number" ColumnName="floor_number" />
+          <ScalarProperty Name="responsible_person_id" ColumnName="responsible_person_id" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="capacity" ColumnName="capacity" />
+          <ScalarProperty Name="compliance_with_safety_regulations" ColumnName="compliance_with_safety_regulations" />
+          <ScalarProperty Name="department_name" ColumnName="department_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="renting_price" FunctionName="Хранилище classroom_fundModel.renting_price" />
+  </EntityContainerMapping>
+</Mapping>
